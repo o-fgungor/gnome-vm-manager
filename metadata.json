@@ -1,0 +1,9 @@
+{
+  "name": "VM Manager",
+  "description": "Manage QEMU/KVM virtual machines from the GNOME panel",
+  "uuid": "vm-manager@omerfarukgungor",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "url": "https://github.com/o-fgungor/gnome-vm-manager",
+  "settings-schema": "org.gnome.shell.extensions.vm-manager",
+  "version": 2
+}

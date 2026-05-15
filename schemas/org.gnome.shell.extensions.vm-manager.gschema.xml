@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.vm-manager" path="/org/gnome/shell/extensions/vm-manager/">
+
+    <key name="terminal" type="s">
+      <default>''</default>
+      <summary>Custom terminal command</summary>
+      <description>Custom terminal command used only when the terminal profile is set to Custom. The SSH command is appended after it (e.g. "gnome-terminal --" or "ghostty -e").</description>
+    </key>
+
+    <key name="terminal-profile" type="s">
+      <default>''</default>
+      <summary>Terminal profile</summary>
+      <description>Selected terminal preset for SSH. Empty value preserves backward compatibility: old saved custom commands behave as Custom, otherwise Auto detection is used.</description>
+    </key>
+
+    <key name="ssh-default-user" type="s">
+      <default>''</default>
+      <summary>Default SSH username</summary>
+      <description>Pre-filled username when opening an SSH connection. Defaults to the current system user if empty.</description>
+    </key>
+
+    <key name="ssh-usernames" type="a{ss}">
+      <default>{}</default>
+      <summary>Per-VM SSH usernames</summary>
+      <description>Remembers the last SSH username used for each VM, keyed by VM name.</description>
+    </key>
+
+  </schema>
+</schemalist>

@@ -1,0 +1,163 @@
+/* VM Manager extension styles */
+
+.vm-menu-container {
+    min-width: 24em;
+    padding-top: 6px;
+}
+
+.vm-toggle-item.popup-menu-item {
+    padding: 2px 6px;
+    margin-bottom: 2px;
+}
+
+.vm-toggle-row.quick-menu-toggle {
+    min-width: 22em;
+    min-height: 2.7em;
+}
+
+.vm-toggle-row .quick-toggle {
+    min-width: 0;
+    min-height: 0;
+    border-radius: 999px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition-duration: 140ms;
+}
+
+.vm-toggle-row .quick-toggle.vm-has-quick-action {
+    border-radius: 999px 0 0 999px;
+}
+
+.vm-toggle-row .vm-quick-action {
+    min-width: 5.8em;
+    min-height: 0;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left-width: 0;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0 999px 999px 0;
+    font-weight: 500;
+    transition-duration: 140ms;
+    text-align: center;
+}
+
+.vm-toggle-row .quick-toggle:active,
+.vm-toggle-row .vm-quick-action:active {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.vm-main-content {
+    spacing: 8px;
+}
+
+.vm-name-label {
+    min-width: 14em;
+    font-weight: 500;
+}
+
+.vm-disclosure-icon {
+    opacity: 0.62;
+}
+
+.vm-toggle-row .quick-toggle.vm-paused,
+.vm-toggle-row .vm-quick-action.vm-paused {
+    background-color: rgba(245, 194, 17, 0.12);
+}
+
+.vm-toggle-row .quick-toggle.vm-crashed,
+.vm-toggle-row .vm-quick-action.vm-crashed {
+    background-color: rgba(224, 27, 36, 0.11);
+}
+
+.vm-toggle-row .quick-toggle.vm-stopped,
+.vm-toggle-row .vm-quick-action.vm-stopped {
+    background-color: rgba(255, 255, 255, 0.035);
+}
+
+.vm-toggle-row .quick-toggle.vm-paused:hover,
+.vm-toggle-row .vm-quick-action.vm-paused:hover,
+.vm-toggle-row .quick-toggle.vm-crashed:hover,
+.vm-toggle-row .vm-quick-action.vm-crashed:hover,
+.vm-toggle-row .quick-toggle.vm-stopped:hover,
+.vm-toggle-row .vm-quick-action.vm-stopped:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.vm-submenu {
+    background-color: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    margin: 4px 6px 8px 6px;
+    padding: 4px 0 6px 0;
+}
+
+.vm-detail-item {
+    font-size: 0.92em;
+    color: #babdb6;
+    padding: 1px 12px;
+}
+
+.vm-action-item {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.vm-submenu-button {
+    x-align: start;
+    padding: 4px 12px;
+    border-radius: 8px;
+    border: 0;
+    background-color: transparent;
+    min-width: 145px; /* Prevent width jumping when text changes to "Are you sure?" */
+}
+
+.vm-submenu-button-label {
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.vm-submenu-button:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.vm-submenu-button:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.vm-ssh-user-entry {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 2px 8px;
+    color: white;
+    caret-color: white;
+    selection-background-color: rgba(53, 132, 228, 0.3);
+}
+
+.vm-ssh-user-entry:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(53, 132, 228, 0.5);
+}
+
+.confirm-start-all {
+    background-color: #2e8b57 !important;
+    color: white !important;
+}
+
+.confirm-stop-all {
+    background-color: #c0392b !important;
+    color: white !important;
+}
+
+.vm-autostart-item {
+    padding: 4px 12px;
+}
+
+.vm-autostart-label {
+    color: rgba(255, 255, 255, 0.96);
+}
+
+/* Dynamic Panel Icon Colors */
+.vm-panel-icon-danger { color: #f66151 !important; }
+.vm-panel-icon-warning { color: #f8e45c !important; }
+.vm-panel-icon-running { color: #8ff0a4 !important; }
